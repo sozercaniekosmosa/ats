@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="general/jquery-3.0.0.min.js"></script>
+    <script src="general/main.js"></script>
+    <script src="general/utils.js"></script>
+
+    <link href="general/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="block-ctrl up-hide" style="position: relative;">
+    <form id="frm-ctrl" class="block-data">
+    </form>
+    <div class="btn-label" style="background-color: #f1b875;" onclick="slideCtrl($(this).parent())">управление</div>
+</div>
+
+<div id="data-list" class="block-data" style="position: absolute; top:45px; margin-left: 20px;">
+    <table id="table-list">
+        <tr class="table-head">
+        </tr>
+    </table>
+</div>
+</div>
+
+<div class="btn-label" style="position: absolute; top: -8px; left: 125px; background-color: #daf175;" onclick="getNumberPhoneTime()">
+    номер/время
+</div>
+
+<div class="btn-label" style="position: absolute; top: -8px; left: 250px; z-index:1000; background-color: #f1eb75;" onclick="getDebtEx()">
+    квиток
+</div>
+
+</body>
+</html>
